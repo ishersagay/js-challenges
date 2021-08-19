@@ -22,7 +22,10 @@
  */
 
 export const removeFalseValues = (booleanArr) => {
-  return;
+ const trueValue = booleanArr.filter((check => check === true));
+
+ return trueValue;
+
 };
 
 /**
@@ -34,7 +37,7 @@ export const removeFalseValues = (booleanArr) => {
  */
 
 export const createPercentageList = (numbersArr) => {
-  return;
+  return numbersArr.map((decimals) => `${decimals * 100}%`)
 };
 
 /**
@@ -47,7 +50,7 @@ export const createPercentageList = (numbersArr) => {
  */
 
 export const createListOfPoessessions = (possessionsArr, name) => {
-  return;
+  return possessionsArr.map((possesion) => `${name + " "+possesion}`);
 };
 
 /**
@@ -72,7 +75,9 @@ export const createListOfPoessessions = (possessionsArr, name) => {
  */
 
 export const convertStringToNumbersArray = (numberString) => {
-  return;
+  const stringToNum = numberString.split("+").map((currentNUmber) => parseInt(currentNUmber));
+
+  return stringToNum;
 };
 
 /**
@@ -84,6 +89,9 @@ export const convertStringToNumbersArray = (numberString) => {
  */
 
 export const createOddEvenArray = (numberString) => {
+  const numberArray = convertStringToNumbersArray(numberString)
+    
+
   return;
 };
 

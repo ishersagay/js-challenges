@@ -22,7 +22,8 @@
  */
 
 export const createRecipeString = (ingredientsArr) => {
-  return;
+  const food = ingredientsArr.join("+")
+  return food;
 };
 
 /**
@@ -33,7 +34,10 @@ export const createRecipeString = (ingredientsArr) => {
  */
 
 export const getFirstAndLastItems = (itemsArr) => {
-  return;
+  const first = itemsArr[0];
+  const second = itemsArr[itemsArr.length - 1];
+  const newArray = [first,second]
+  return newArray;
 };
 
 /**
@@ -44,7 +48,11 @@ export const getFirstAndLastItems = (itemsArr) => {
  */
 
 export const totalScores = (scoreArr) => {
-  return;
+  var total = 0;
+  for( let value of scoreArr) {
+    total += value;
+  }
+  return total;
 };
 
 /**
@@ -54,13 +62,17 @@ export const totalScores = (scoreArr) => {
 /**
  * A function that takes an number and returns the total of the range of numbers between 0 and the given number.
  * e.g. 10 => 0+1+2+3+4+5+6+7+8+9+10 = 55.
- *
+ * 0800-260-0500
  * @param {number} rangeMax 10
  * @return {number} 55
  */
 
 export const totalRange = (rangeMax) => {
-  return;
+  var total = 0;
+  for (var i = 0; i < rangeMax+1; i++) {
+    total += i
+  }
+  return total;
 };
 
 /**
